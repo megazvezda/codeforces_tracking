@@ -1,0 +1,18 @@
+# Binaries
+cfbot
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Config with secrets
+config.json
+
+# Go workspace file
+go.work
