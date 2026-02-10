@@ -1,0 +1,16 @@
+{
+  "telegram_bot_token": "8531368840:AAH84QpeRG5StdsDsA8pmAs8s-ec1hDLzlg",
+  "telegram_chat_id": -1002610917003,
+  "_comment": "For private chat use positive number, for public channel use negative number starting with -100",
+  "codeforces_handles": [
+    {
+      "handle": "shtol",
+      "real_name": "Amir Kuskeyev"
+    },
+    {
+      "handle": "yahhweh",
+      "real_name": "Kirill Kovalenko"
+    }
+  ],
+  "poll_interval_seconds": 120
+}
