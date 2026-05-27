@@ -1,15 +1,7 @@
 # Codeforces Telegram Bot
 
 A lightweight Telegram bot that monitors Codeforces submissions and notifies you when tracked users solve problems.
-
-## Features
-
-- 📊 Monitors multiple Codeforces handles
-- 🔔 Instant notifications for accepted submissions
-- 📈 Shows wrong submission count before success
-- ⚡ Displays time, memory, and compiler info
-- 🛡️ Built-in rate limiting to respect API limits
-- 🔧 Easy configuration via JSON
+Monitors multiple Codeforces handles, instant notifications for accepted submissions. Shows wrong submission count before success, displays time, memory, and compiler info.
 
 ## Setup
 
@@ -94,36 +86,8 @@ go build -o cfbot
 
 The bot automatically detects whether a problem is from a regular contest or gym and generates the correct URL format.
 
-## Rate Limits
-
-- **Codeforces API**: Limited to 1 request per 2 seconds (automatically handled)
-- **Telegram API**: Bot sends one message per accepted submission (well within limits)
-
-## Adding/Removing Handles
-
-Simply edit `config.json` and restart the bot. You can add or remove handles at any time.
-
-## Tips
-
-- Set `poll_interval_seconds` to at least 120 to avoid unnecessary API calls
-- The bot initializes by marking recent submissions as "seen" to avoid spam on startup
-- Only "OK" (Accepted) verdicts trigger notifications
-
-## Troubleshooting
-
-**Bot doesn't send messages:**
-- Verify your bot token is correct
-- For private chat: Make sure you've started a chat with your bot
-- For channel: Ensure bot is added as admin with "Post Messages" permission
-- Check that the chat_id is correct (should be a number, negative for channels)
-
-**API errors:**
-- Verify the Codeforces handles exist
-- Check your internet connection
-- Increase `poll_interval_seconds` if hitting rate limits
-
 ## Sources
 
-This bot uses the official Codeforces API:
+The official Codeforces API:
 - [Codeforces API Documentation](https://codeforces.com/apiHelp)
 - [PublicAPI.dev - Codeforces API](https://publicapi.dev/codeforces-api)
