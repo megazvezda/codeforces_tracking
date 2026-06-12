@@ -1,0 +1,11 @@
+{
+  "telegram_token": "YOUR_TELEGRAM_BOT_TOKEN",
+  "telegram_chat_id": 123456789,
+  "codeforces_handles": [
+    "handle1",
+    "handle2"
+  ],
+  "polling_interval_seconds": 60,
+  "codeforces_api_token": "YOUR_CODEFORCES_API_TOKEN",
+  "codeforces_api_key": "YOUR_CODEFORCES_API_KEY"
+}
